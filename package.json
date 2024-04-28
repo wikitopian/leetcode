@@ -1,0 +1,28 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode practice",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint ./problems/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wikitopian/leetcode.git"
+  },
+  "author": "wikitopian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wikitopian/leetcode/issues"
+  },
+  "homepage": "https://github.com/wikitopian/leetcode#readme",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.0.0"
+  }
+}
