@@ -1,3 +1,15 @@
+const join = (arr1, arr2, ids = {}) => {
+  arr1.forEach((item) => ids[item.id] = item);
+
+  arr2.forEach((item) => {
+    if (item.id in ids) ids[item.id] = Object.assign(ids[item.id], item);
+    else ids[item.id] = item;
+  });
+
+  return Object.values(ids);
+};
+
+/* Mine:
 const join = (a1, a2) => [...a1, ...a2]
   .reduce((combined, elem) => {
     combined[elem.id] = { ...combined[elem.id], ...elem };
@@ -5,6 +17,7 @@ const join = (a1, a2) => [...a1, ...a2]
     return combined;
   }, [])
   .filter((elem) => elem !== undefined);
+*/
 
 const arr1 = [
   {"id":1,"x":36,"d":26,"f":35},{"id":3,"c":20,"z":75}
